@@ -1,0 +1,11 @@
+<div class="grid-container">
+@if(cats.length>0){
+            @for(cat of cats; track cat.id){
+               <div class="grid-item">
+                    <img src="{{cat.url}}" alt="">
+               </div>
+            }
+}@else{
+    <p>No cats to display!</p>
+}
+</div>
